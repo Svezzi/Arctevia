@@ -1,103 +1,197 @@
-import Image from "next/image";
+'use client';
+
+import Link from 'next/link';
+import { Server, Shield, Leaf, X } from 'lucide-react';
+import { useState } from 'react';
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+  const [showModal, setShowModal] = useState(false);
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  return (
+    <div className="bg-[#EAF2F8] pb-20">
+      {/* Hero Section - with margin top to account for fixed navbar */}
+      <section className="pt-28 pb-20">
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
+          <div className="text-center">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#1B3B6F] mb-6">
+              Sovereign Compute. Built for Open AI.
+            </h1>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-10">
+              Run open-source AI models on Nordic GPU infrastructure — no lock-in, no surveillance.
+            </p>
+            <button
+              onClick={() => setShowModal(true)}
+              className="bg-[#A9D6E5] text-[#1B3B6F] px-6 py-3 rounded-xl font-semibold hover:bg-[#1B3B6F] hover:text-white transition duration-200 inline-block"
+            >
+              Get Early Access
+            </button>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
+
+      {/* Features Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
+          <h2 className="text-3xl font-bold text-[#1B3B6F] text-center mb-16">
+            Why ArticStack?
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            {/* Feature 1 */}
+            <div className="bg-[#EAF2F8] p-8 rounded-2xl shadow-md">
+              <div className="bg-[#A9D6E5] p-3 rounded-xl inline-block mb-5">
+                <Shield className="w-8 h-8 text-[#1B3B6F]" />
+              </div>
+              <h3 className="text-xl font-semibold text-[#1B3B6F] mb-3">
+                Sovereign by Default
+              </h3>
+              <p className="text-gray-600">
+                Your data stays private and under your control. No backdoors, no tracking, just pure compute power.
+              </p>
+            </div>
+            
+            {/* Feature 2 */}
+            <div className="bg-[#EAF2F8] p-8 rounded-2xl shadow-md">
+              <div className="bg-[#A9D6E5] p-3 rounded-xl inline-block mb-5">
+                <Leaf className="w-8 h-8 text-[#1B3B6F]" />
+              </div>
+              <h3 className="text-xl font-semibold text-[#1B3B6F] mb-3">
+                Green Infrastructure
+              </h3>
+              <p className="text-gray-600">
+                Built on 100% renewable energy sources in the Nordics, minimizing the carbon footprint of your AI workloads.
+              </p>
+            </div>
+            
+            {/* Feature 3 */}
+            <div className="bg-[#EAF2F8] p-8 rounded-2xl shadow-md">
+              <div className="bg-[#A9D6E5] p-3 rounded-xl inline-block mb-5">
+                <Server className="w-8 h-8 text-[#1B3B6F]" />
+              </div>
+              <h3 className="text-xl font-semibold text-[#1B3B6F] mb-3">
+                Open-Model Ready
+              </h3>
+              <p className="text-gray-600">
+                Optimized for the latest open-source models. Deploy LLaMA, Mistral, Falcon and more with just a few clicks.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Models Section */}
+      <section className="py-16">
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
+          <h2 className="text-3xl font-bold text-[#1B3B6F] text-center mb-16">
+            Supported Models
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Model Card 1 */}
+            <div className="bg-white p-6 rounded-2xl shadow-md">
+              <h3 className="text-xl font-semibold text-[#1B3B6F] mb-3">
+                LLaMA 2
+              </h3>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="text-xs bg-gray-100 text-gray-600 px-3 py-1 rounded-full">
+                  #Open-Source
+                </span>
+                <span className="text-xs bg-gray-100 text-gray-600 px-3 py-1 rounded-full">
+                  #7B
+                </span>
+                <span className="text-xs bg-gray-100 text-gray-600 px-3 py-1 rounded-full">
+                  #Quantized
+                </span>
+              </div>
+              <button className="bg-[#A9D6E5] text-[#1B3B6F] px-4 py-2 rounded-xl text-sm font-semibold hover:bg-[#1B3B6F] hover:text-white transition duration-200">
+                Run on ArticStack
+              </button>
+            </div>
+            
+            {/* Model Card 2 */}
+            <div className="bg-white p-6 rounded-2xl shadow-md">
+              <h3 className="text-xl font-semibold text-[#1B3B6F] mb-3">
+                Mistral
+              </h3>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="text-xs bg-gray-100 text-gray-600 px-3 py-1 rounded-full">
+                  #Open-Source
+                </span>
+                <span className="text-xs bg-gray-100 text-gray-600 px-3 py-1 rounded-full">
+                  #7B
+                </span>
+                <span className="text-xs bg-gray-100 text-gray-600 px-3 py-1 rounded-full">
+                  #Instruction-Tuned
+                </span>
+              </div>
+              <button className="bg-[#A9D6E5] text-[#1B3B6F] px-4 py-2 rounded-xl text-sm font-semibold hover:bg-[#1B3B6F] hover:text-white transition duration-200">
+                Run on ArticStack
+              </button>
+            </div>
+            
+            {/* Model Card 3 */}
+            <div className="bg-white p-6 rounded-2xl shadow-md">
+              <h3 className="text-xl font-semibold text-[#1B3B6F] mb-3">
+                DeepSeek
+              </h3>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="text-xs bg-gray-100 text-gray-600 px-3 py-1 rounded-full">
+                  #Open-Source
+                </span>
+                <span className="text-xs bg-gray-100 text-gray-600 px-3 py-1 rounded-full">
+                  #7B
+                </span>
+                <span className="text-xs bg-gray-100 text-gray-600 px-3 py-1 rounded-full">
+                  #Coder
+                </span>
+              </div>
+              <button className="bg-[#A9D6E5] text-[#1B3B6F] px-4 py-2 rounded-xl text-sm font-semibold hover:bg-[#1B3B6F] hover:text-white transition duration-200">
+                Run on ArticStack
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-gradient-to-b from-white to-[#A9D6E5] rounded-2xl mt-20 mx-6 md:mx-12">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold text-[#1B3B6F] mb-6">
+            GPU Power That Respects Your Privacy
+          </h2>
+          <p className="text-xl text-gray-600 mb-10">
+            Join our early access program and be among the first to experience truly sovereign AI compute.
+          </p>
+          <button
+            onClick={() => setShowModal(true)}
+            className="bg-[#1B3B6F] text-white px-6 py-3 rounded-xl font-semibold hover:bg-[#A9D6E5] hover:text-[#1B3B6F] transition duration-200 inline-block"
+          >
+            Join Early Access
+          </button>
+        </div>
+      </section>
+
+      {/* Early Access Modal */}
+      {showModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-50">
+          <div className="bg-white rounded-xl shadow-lg p-6 max-w-2xl w-full relative">
+            <button 
+              onClick={() => setShowModal(false)}
+              className="absolute top-3 right-3 text-gray-500 hover:text-gray-800"
+              aria-label="Close modal"
+            >
+              <X className="w-6 h-6" />
+            </button>
+            <h2 className="text-2xl font-bold text-[#1B3B6F] mb-4">Join ArticStack Early Access</h2>
+            <iframe
+              src="https://tally.so/r/mZeB4a"
+              width="100%"
+              height="500"
+              className="rounded-md w-full"
+              title="ArticStack Waitlist"
+              frameBorder="0"
+            ></iframe>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
