@@ -21,7 +21,7 @@ export default function BlogPage() {
               Check back soon for insights, tutorials, and updates on Arctevia's development.
             </p>
             <p className="mt-8 text-sm">
-              Want to contribute a guest post? Contact us at <a href="mailto:content@arctevia.com" className="text-blue-600 underline">content@arctevia.com</a>.
+              Want to contribute a guest post? Contact us at <a href="mailto:info@arctevia.com" className="text-blue-600 underline">info@arctevia.com</a>.
             </p>
           </div>
         </section>

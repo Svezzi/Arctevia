@@ -19,7 +19,7 @@ export default function ApiReferencePage() {
             </p>
             <p className="mt-4">
               For early access to our API documentation or specific technical questions, 
-              please contact <a href="mailto:developers@arctevia.com" className="text-blue-600 underline">developers@arctevia.com</a>.
+              please contact <a href="mailto:info@arctevia.com" className="text-blue-600 underline">info@arctevia.com</a>.
             </p>
           </div>
         </section>
