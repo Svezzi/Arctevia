@@ -27,7 +27,7 @@ export default function Home() {
               onClick={() => setShowModal(true)}
               className="bg-[#A9D6E5] text-[#1B3B6F] px-6 py-3 rounded-xl font-semibold hover:bg-[#1B3B6F] hover:text-white transition duration-200 inline-block"
             >
-              Get Early Access
+              Request a Partner Intro Call
             </button>
           </div>
         </div>
@@ -112,7 +112,7 @@ export default function Home() {
                 onClick={() => setShowModal(true)}
                 className="bg-[#A9D6E5] text-[#1B3B6F] px-4 py-2 rounded-xl text-sm font-semibold hover:bg-[#1B3B6F] hover:text-white transition duration-200"
               >
-                Run on Arctevia
+                Request Partner Access
               </button>
             </div>
             
@@ -136,7 +136,7 @@ export default function Home() {
                 onClick={() => setShowModal(true)}
                 className="bg-[#A9D6E5] text-[#1B3B6F] px-4 py-2 rounded-xl text-sm font-semibold hover:bg-[#1B3B6F] hover:text-white transition duration-200"
               >
-                Run on Arctevia
+                Request Partner Access
               </button>
             </div>
             
@@ -160,7 +160,7 @@ export default function Home() {
                 onClick={() => setShowModal(true)}
                 className="bg-[#A9D6E5] text-[#1B3B6F] px-4 py-2 rounded-xl text-sm font-semibold hover:bg-[#1B3B6F] hover:text-white transition duration-200"
               >
-                Run on Arctevia
+                Request Partner Access
               </button>
             </div>
           </div>
@@ -171,7 +171,7 @@ export default function Home() {
       <section className="py-20 bg-gradient-to-b from-white to-[#A9D6E5] rounded-2xl mt-20 mx-6 md:mx-12">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold text-[#1B3B6F] mb-6">
-            GPU Power That Respects Your Privacy
+            Let's explore partnership opportunities in sovereign AI compute.
           </h2>
           <p className="text-xl text-gray-600 mb-4">
             Join our early access program and be among the first to experience truly sovereign AI compute.
@@ -183,7 +183,7 @@ export default function Home() {
             onClick={() => setShowModal(true)}
             className="bg-[#1B3B6F] text-white px-6 py-3 rounded-xl font-semibold hover:bg-[#A9D6E5] hover:text-[#1B3B6F] transition duration-200 inline-block"
           >
-            Join Early Access
+            Request a Partner Intro Call
           </button>
         </div>
       </section>
@@ -199,7 +199,8 @@ export default function Home() {
             >
               <X className="w-6 h-6" />
             </button>
-            <h2 className="text-2xl font-bold text-[#1B3B6F] mb-4">Join Arctevia Early Access</h2>
+            <h2 className="text-2xl font-bold text-[#1B3B6F] mb-4">Request Partner Intro Call</h2>
+            <p className="text-gray-600 mb-4">After submitting the form, we'll follow up within 1–2 business days to explore potential collaboration.</p>
             <iframe
               src="https://tally.so/r/mVNgzg"
               width="100%"
