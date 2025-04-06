@@ -1,8 +1,9 @@
 'use client';
 
 import Link from 'next/link';
-import { ArrowLeft, Github, ExternalLink } from 'lucide-react';
+import { ArrowLeft, Github, ExternalLink, X } from 'lucide-react';
 import { useParams } from 'next/navigation';
+import { useState } from 'react';
 
 // Mock data for models
 const MODEL_DATA = {
@@ -137,6 +138,7 @@ const MODEL_DATA = {
 export default function ModelDetailPage() {
   const params = useParams();
   const modelName = params.modelName as string;
+  const [showModal, setShowModal] = useState(false);
   
   // Get model data or use a default fallback
   const modelKey = Object.keys(MODEL_DATA).find(key => 
@@ -244,8 +246,8 @@ export default function ModelDetailPage() {
               <h2 className="text-xl font-semibold text-[#1B3B6F] mb-4">Quick Start</h2>
               <div className="bg-gray-900 rounded-lg p-4 font-mono text-sm text-white overflow-x-auto mb-3">
                 <pre>
-                  {`# Run ${model.name} on ArticStack\n`}
-                  {`articstack run --model ${modelKey}${modelSize} --gpu A100 --runtime 4h`}
+                  {`# Run ${model.name} on Arctevia\n`}
+                  {`arctevia run --model ${modelKey}${modelSize} --gpu A100 --runtime 4h`}
                 </pre>
               </div>
               <p className="text-sm text-gray-600">
@@ -286,8 +288,11 @@ export default function ModelDetailPage() {
             Run {model.name} on our Nordic GPU infrastructure with full control over your data and configuration.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <button className="bg-[#1B3B6F] text-white px-6 py-3 rounded-xl font-semibold hover:bg-[#2a5ca3] transition-colors">
-              Run This Model on ArticStack
+            <button 
+              onClick={() => setShowModal(true)}
+              className="w-full bg-[#A9D6E5] text-[#1B3B6F] px-6 py-3 rounded-xl font-semibold hover:bg-[#1B3B6F] hover:text-white transition duration-200 mt-4 text-center"
+            >
+              Run This Model on Arctevia
             </button>
             <Link 
               href="/pricing" 
@@ -298,6 +303,30 @@ export default function ModelDetailPage() {
           </div>
         </div>
       </div>
+      
+      {/* Early Access Modal */}
+      {showModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-50">
+          <div className="bg-white rounded-xl shadow-lg p-6 max-w-2xl w-full relative">
+            <button 
+              onClick={() => setShowModal(false)}
+              className="absolute top-3 right-3 text-gray-500 hover:text-gray-800"
+              aria-label="Close modal"
+            >
+              <X className="w-6 h-6" />
+            </button>
+            <h2 className="text-2xl font-bold text-[#1B3B6F] mb-4">Join Arctevia Early Access</h2>
+            <iframe
+              src="https://tally.so/r/mZeB4a"
+              width="100%"
+              height="500"
+              className="rounded-md w-full"
+              title="Arctevia Waitlist"
+              frameBorder="0"
+            ></iframe>
+          </div>
+        </div>
+      )}
     </div>
   );
 } 

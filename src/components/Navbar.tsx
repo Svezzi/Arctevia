@@ -14,7 +14,7 @@ export default function Navbar() {
     <nav className="fixed w-full z-10 bg-white shadow-md py-4 px-8">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <Link href="/" className="text-2xl font-bold text-[#1B3B6F]">
-          ArticStack
+          Arctevia
         </Link>
         
         <div className="hidden md:flex items-center space-x-8">

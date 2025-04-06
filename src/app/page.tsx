@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Server, Shield, Leaf, X } from 'lucide-react';
+import { Server, Shield, Leaf, Zap, Brain, X } from 'lucide-react';
 import { useState } from 'react';
 
 export default function Home() {
@@ -13,11 +13,15 @@ export default function Home() {
       <section className="pt-28 pb-20">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="text-center">
+            <div className="flex items-center justify-center mb-3">
+              <Zap className="w-5 h-5 text-[#1B3B6F] mr-2" />
+              <span className="text-lg font-medium text-[#1B3B6F]">European AI Infrastructure</span>
+            </div>
             <h1 className="text-4xl md:text-5xl font-bold text-[#1B3B6F] mb-6">
-              Sovereign Compute. Built for Open AI.
+              Sovereign Compute. Built for Open-Source AI.
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-10">
-              Run open-source AI models on Nordic GPU infrastructure — no lock-in, no surveillance.
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto mb-10 leading-relaxed">
+              Run open models like LLaMA and Mistral on Nordic GPU infrastructure<br />— no lock-in, no surveillance.
             </p>
             <button
               onClick={() => setShowModal(true)}
@@ -33,45 +37,45 @@ export default function Home() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <h2 className="text-3xl font-bold text-[#1B3B6F] text-center mb-16">
-            Why ArticStack?
+            Why Arctevia?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {/* Feature 1 */}
             <div className="bg-[#EAF2F8] p-8 rounded-2xl shadow-md">
               <div className="bg-[#A9D6E5] p-3 rounded-xl inline-block mb-5">
-                <Shield className="w-8 h-8 text-[#1B3B6F]" />
+                <Brain className="w-8 h-8 text-[#1B3B6F]" />
               </div>
               <h3 className="text-xl font-semibold text-[#1B3B6F] mb-3">
-                Sovereign by Default
+                🧠 Optimized for Open Models
               </h3>
               <p className="text-gray-600">
-                Your data stays private and under your control. No backdoors, no tracking, just pure compute power.
+                Run top open-source models like Mistral, LLaMA, and Falcon in seconds — no config headaches.
               </p>
             </div>
             
             {/* Feature 2 */}
             <div className="bg-[#EAF2F8] p-8 rounded-2xl shadow-md">
               <div className="bg-[#A9D6E5] p-3 rounded-xl inline-block mb-5">
-                <Leaf className="w-8 h-8 text-[#1B3B6F]" />
+                <Shield className="w-8 h-8 text-[#1B3B6F]" />
               </div>
               <h3 className="text-xl font-semibold text-[#1B3B6F] mb-3">
-                Green Infrastructure
+                🛡️ Sovereign by Default
               </h3>
               <p className="text-gray-600">
-                Built on 100% renewable energy sources in the Nordics, minimizing the carbon footprint of your AI workloads.
+                Your data stays local, private, and under your control. No tracking, no backdoors — just compute.
               </p>
             </div>
             
             {/* Feature 3 */}
             <div className="bg-[#EAF2F8] p-8 rounded-2xl shadow-md">
               <div className="bg-[#A9D6E5] p-3 rounded-xl inline-block mb-5">
-                <Server className="w-8 h-8 text-[#1B3B6F]" />
+                <Leaf className="w-8 h-8 text-[#1B3B6F]" />
               </div>
               <h3 className="text-xl font-semibold text-[#1B3B6F] mb-3">
-                Open-Model Ready
+                🌱 Green Infrastructure
               </h3>
               <p className="text-gray-600">
-                Optimized for the latest open-source models. Deploy LLaMA, Mistral, Falcon and more with just a few clicks.
+                Powered by 100% renewable energy from Nordic sources — with one of the lowest carbon footprints in AI.
               </p>
             </div>
           </div>
@@ -81,9 +85,12 @@ export default function Home() {
       {/* Models Section */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
-          <h2 className="text-3xl font-bold text-[#1B3B6F] text-center mb-16">
-            Supported Models
+          <h2 className="text-3xl font-bold text-[#1B3B6F] text-center mb-4">
+            Popular Open Models
           </h2>
+          <p className="text-center text-gray-600 mb-16 max-w-3xl mx-auto">
+            Run these leading open-source LLMs on secure, high-performance Nordic GPUs.
+          </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Model Card 1 */}
             <div className="bg-white p-6 rounded-2xl shadow-md">
@@ -101,8 +108,11 @@ export default function Home() {
                   #Quantized
                 </span>
               </div>
-              <button className="bg-[#A9D6E5] text-[#1B3B6F] px-4 py-2 rounded-xl text-sm font-semibold hover:bg-[#1B3B6F] hover:text-white transition duration-200">
-                Run on ArticStack
+              <button 
+                onClick={() => setShowModal(true)}
+                className="bg-[#A9D6E5] text-[#1B3B6F] px-4 py-2 rounded-xl text-sm font-semibold hover:bg-[#1B3B6F] hover:text-white transition duration-200"
+              >
+                Run on Arctevia
               </button>
             </div>
             
@@ -122,8 +132,11 @@ export default function Home() {
                   #Instruction-Tuned
                 </span>
               </div>
-              <button className="bg-[#A9D6E5] text-[#1B3B6F] px-4 py-2 rounded-xl text-sm font-semibold hover:bg-[#1B3B6F] hover:text-white transition duration-200">
-                Run on ArticStack
+              <button 
+                onClick={() => setShowModal(true)}
+                className="bg-[#A9D6E5] text-[#1B3B6F] px-4 py-2 rounded-xl text-sm font-semibold hover:bg-[#1B3B6F] hover:text-white transition duration-200"
+              >
+                Run on Arctevia
               </button>
             </div>
             
@@ -143,8 +156,11 @@ export default function Home() {
                   #Coder
                 </span>
               </div>
-              <button className="bg-[#A9D6E5] text-[#1B3B6F] px-4 py-2 rounded-xl text-sm font-semibold hover:bg-[#1B3B6F] hover:text-white transition duration-200">
-                Run on ArticStack
+              <button 
+                onClick={() => setShowModal(true)}
+                className="bg-[#A9D6E5] text-[#1B3B6F] px-4 py-2 rounded-xl text-sm font-semibold hover:bg-[#1B3B6F] hover:text-white transition duration-200"
+              >
+                Run on Arctevia
               </button>
             </div>
           </div>
@@ -157,8 +173,11 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-[#1B3B6F] mb-6">
             GPU Power That Respects Your Privacy
           </h2>
-          <p className="text-xl text-gray-600 mb-10">
+          <p className="text-xl text-gray-600 mb-4">
             Join our early access program and be among the first to experience truly sovereign AI compute.
+          </p>
+          <p className="text-lg text-gray-700 italic mb-10">
+            🚀 Join developers and AI teams moving to sovereign compute — before the cloud gets locked down.
           </p>
           <button
             onClick={() => setShowModal(true)}
@@ -180,13 +199,13 @@ export default function Home() {
             >
               <X className="w-6 h-6" />
             </button>
-            <h2 className="text-2xl font-bold text-[#1B3B6F] mb-4">Join ArticStack Early Access</h2>
+            <h2 className="text-2xl font-bold text-[#1B3B6F] mb-4">Join Arctevia Early Access</h2>
             <iframe
               src="https://tally.so/r/mZeB4a"
               width="100%"
               height="500"
               className="rounded-md w-full"
-              title="ArticStack Waitlist"
+              title="Arctevia Waitlist"
               frameBorder="0"
             ></iframe>
           </div>

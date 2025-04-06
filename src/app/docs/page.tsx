@@ -2,21 +2,22 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import { ChevronRight, CheckCircle, Settings, Lock, Brain, Radio, DollarSign } from 'lucide-react';
+import { ChevronRight, CheckCircle, Settings, Lock, Brain, Radio, DollarSign, X } from 'lucide-react';
 
 export default function DocsPage() {
   const [activeSection, setActiveSection] = useState<string | null>(null);
+  const [showModal, setShowModal] = useState(false);
   
   // Define sections for both the sidebar and content
   const sections = [
     {
       id: 'getting-started',
-      title: 'Getting Started with ArticStack',
+      title: 'Getting Started with Arctevia',
       icon: <CheckCircle className="w-5 h-5 text-emerald-500" />,
       content: (
         <>
           <p className="text-gray-600 mb-4">
-            ArticStack offers a simple, secure way to run open-source AI models on Nordic infrastructure.
+            Arctevia offers a simple, secure way to run open-source AI models on Nordic infrastructure.
             This guide walks you through setup and launching your first job in minutes.
           </p>
           <p className="text-gray-600 mb-4">
@@ -40,7 +41,7 @@ export default function DocsPage() {
       content: (
         <>
           <p className="text-gray-600 mb-4">
-            When you submit a job, ArticStack allocates GPU resources and prepares the environment for your selected model.
+            When you submit a job, Arctevia allocates GPU resources and prepares the environment for your selected model.
             Jobs are queued and executed based on your configuration and current availability.
           </p>
           <p className="text-gray-600 mb-4">
@@ -65,7 +66,7 @@ export default function DocsPage() {
       content: (
         <>
           <p className="text-gray-600 mb-4">
-            At ArticStack, data sovereignty is a core principle.
+            At Arctevia, data sovereignty is a core principle.
           </p>
           <p className="text-gray-600 mb-4">
             Your data <strong>never leaves the Nordic region</strong> unless you explicitly allow it.
@@ -77,7 +78,7 @@ export default function DocsPage() {
           </p>
           <div className="bg-blue-50 border-l-4 border-blue-400 p-4 rounded mt-4">
             <p className="text-sm text-blue-700">
-              ✅ ArticStack is ISO 27001 certified and fully compliant with GDPR for all European customers.
+              ✅ Arctevia is ISO 27001 certified and fully compliant with GDPR for all European customers.
             </p>
           </div>
         </>
@@ -90,7 +91,7 @@ export default function DocsPage() {
       content: (
         <>
           <p className="text-gray-600 mb-4">
-            ArticStack supports a growing range of open-source models — from small and efficient (like Phi-2) to large-scale (like LLaMA 2 70B and Falcon 180B).
+            Arctevia supports a growing range of open-source models — from small and efficient (like Phi-2) to large-scale (like LLaMA 2 70B and Falcon 180B).
           </p>
           <p className="text-gray-600 mb-4">
             Each model includes optimized presets for common workloads (chat, code generation, summarization), with the option to customize configurations as needed.
@@ -113,7 +114,7 @@ export default function DocsPage() {
       content: (
         <>
           <p className="text-gray-600 mb-4">
-            ArticStack operates exclusively on infrastructure hosted in the Nordic region — including 🇮🇸 Iceland, 🇳🇴 Norway, and 🇫🇮 Finland — powered by 100% renewable energy.
+            Arctevia operates exclusively on infrastructure hosted in the Nordic region — including 🇮🇸 Iceland, 🇳🇴 Norway, and 🇫🇮 Finland — powered by 100% renewable energy.
           </p>
           <p className="text-gray-600 mb-4">
             Our partnerships with Nordic cloud providers ensure:
@@ -138,7 +139,7 @@ export default function DocsPage() {
       content: (
         <>
           <p className="text-gray-600 mb-4">
-            ArticStack uses transparent, usage-based pricing — no hidden fees.
+            Arctevia uses transparent, usage-based pricing — no hidden fees.
             You only pay for the GPU hours you consume, with rates based on GPU type and model size.
           </p>
           <p className="text-gray-600 mb-4">
@@ -215,7 +216,7 @@ export default function DocsPage() {
               
               {/* Subheading / Intro */}
               <p className="text-lg text-gray-600 mb-10">
-                Everything you need to get started with ArticStack — from launching your first model to understanding how we keep your data sovereign and secure.
+                Everything you need to get started with Arctevia — from launching your first model to understanding how we keep your data sovereign and secure.
               </p>
               
               {/* Documentation Sections */}
@@ -252,30 +253,54 @@ export default function DocsPage() {
                 ))}
               </div>
               
-              {/* Footer CTA */}
-              <div className="bg-white shadow-md p-8 rounded-xl mt-12 text-center">
-                <h2 className="text-xl font-semibold text-[#1B3B6F] mb-4">❓ Still have questions?</h2>
+              {/* Contact Section - Located near the end of the component */}
+              <div className="bg-white p-6 rounded-xl shadow-md mt-12">
+                <h2 className="text-xl font-semibold text-[#1B3B6F] mb-4">Need Help?</h2>
                 <p className="text-gray-600 mb-6">
                   Reach out to us at{' '}
-                  <a href="mailto:hello@articstack.com" className="text-[#1B3B6F] font-medium hover:underline">
-                    hello@articstack.com
+                  <a href="mailto:hello@arctevia.com" className="text-[#1B3B6F] font-medium hover:underline">
+                    hello@arctevia.com
                   </a>{' '}
                   or join our{' '}
-                  <a href="https://discord.gg/articstack" className="text-[#1B3B6F] font-medium hover:underline" target="_blank" rel="noopener noreferrer">
+                  <a href="https://discord.gg/arctevia" className="text-[#1B3B6F] font-medium hover:underline" target="_blank" rel="noopener noreferrer">
                     Discord
                   </a>.
                 </p>
-                <Link
-                  href="/submit-job"
+                <button
+                  onClick={() => setShowModal(true)}
                   className="bg-[#A9D6E5] text-[#1B3B6F] px-6 py-3 rounded-xl font-semibold hover:bg-[#1B3B6F] hover:text-white transition-colors inline-block"
                 >
                   👉 Get Early Access →
-                </Link>
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
+      
+      {/* Early Access Modal */}
+      {showModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-50">
+          <div className="bg-white rounded-xl shadow-lg p-6 max-w-2xl w-full relative">
+            <button 
+              onClick={() => setShowModal(false)}
+              className="absolute top-3 right-3 text-gray-500 hover:text-gray-800"
+              aria-label="Close modal"
+            >
+              <X className="w-6 h-6" />
+            </button>
+            <h2 className="text-2xl font-bold text-[#1B3B6F] mb-4">Join Arctevia Early Access</h2>
+            <iframe
+              src="https://tally.so/r/mZeB4a"
+              width="100%"
+              height="500"
+              className="rounded-md w-full"
+              title="Arctevia Waitlist"
+              frameBorder="0"
+            ></iframe>
+          </div>
+        </div>
+      )}
     </div>
   );
 } 

@@ -7,7 +7,7 @@ import { User, Key, MapPin, InfoIcon, AlertTriangle, RefreshCw, CreditCard, Acti
 export default function AccountPage() {
   // Mock user data for direct access without authentication
   const user = {
-    email: "user@articstack.com",
+    email: "user@arctevia.com",
     region: "Iceland",
     credits: 12.30,
     gpuHours: 41.5,

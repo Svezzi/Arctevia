@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ArticStack - Sovereign Compute for Open AI",
+  title: "Arctevia - Sovereign Compute for Open AI",
   description: "Run open-source AI models on Nordic GPU infrastructure — no lock-in, no surveillance.",
 };
 
