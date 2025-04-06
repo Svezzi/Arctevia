@@ -162,7 +162,7 @@ export default function AboutPage() {
         {/* Call-to-Action */}
         <section className="mb-16 bg-gradient-to-b from-white to-[#A9D6E5] rounded-2xl p-8 text-center">
           <h2 className="text-2xl font-bold text-[#1B3B6F] mb-4">
-            Interested in learning more or getting started with Arctevia?
+            Interested in partnering with Arctevia?
           </h2>
           <p className="text-lg text-gray-700 mb-8">
             We're actively exploring partnerships with data centers, AI startups, and researchers who share our commitment to privacy-first, sustainable AI infrastructure.
