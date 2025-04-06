@@ -68,14 +68,13 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold text-[#1B3B6F] mb-6">Our Vision</h2>
           <div className="prose prose-lg max-w-none text-gray-700">
             <p className="mb-4">
-              We're building Arctevia to support the next generation of AI infrastructure — helping teams deploy and scale their models on trusted, sustainable compute.
+              We're building Arctevia to support the next generation of AI infrastructure — helping teams deploy and scale their models on trusted, sustainable infrastructure.
             </p>
             <p className="mb-4">
               Our goal is to support Europe's growing demand for sovereign AI infrastructure — offering a privacy-first, sustainable foundation for innovation.
             </p>
             <p className="mb-4">
-              Through innovation and commitment, we strive to be the go-to partner for AI companies 
-              seeking secure, scalable, and sustainable compute power for their AI projects.
+              Through innovation and commitment, we aim to be a trusted partner for companies seeking secure, scalable, and sustainable compute for their AI projects.
             </p>
           </div>
         </section>
