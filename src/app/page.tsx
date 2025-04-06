@@ -27,7 +27,7 @@ export default function Home() {
               onClick={() => setShowModal(true)}
               className="bg-[#A9D6E5] text-[#1B3B6F] px-6 py-3 rounded-xl font-semibold hover:bg-[#1B3B6F] hover:text-white transition duration-200 inline-block"
             >
-              Request a Partner Intro Call
+              Get Early Access
             </button>
           </div>
         </div>
@@ -112,7 +112,7 @@ export default function Home() {
                 onClick={() => setShowModal(true)}
                 className="bg-[#A9D6E5] text-[#1B3B6F] px-4 py-2 rounded-xl text-sm font-semibold hover:bg-[#1B3B6F] hover:text-white transition duration-200"
               >
-                Request Partner Access
+                Run on Arctevia
               </button>
             </div>
             
@@ -136,7 +136,7 @@ export default function Home() {
                 onClick={() => setShowModal(true)}
                 className="bg-[#A9D6E5] text-[#1B3B6F] px-4 py-2 rounded-xl text-sm font-semibold hover:bg-[#1B3B6F] hover:text-white transition duration-200"
               >
-                Request Partner Access
+                Run on Arctevia
               </button>
             </div>
             
@@ -160,7 +160,7 @@ export default function Home() {
                 onClick={() => setShowModal(true)}
                 className="bg-[#A9D6E5] text-[#1B3B6F] px-4 py-2 rounded-xl text-sm font-semibold hover:bg-[#1B3B6F] hover:text-white transition duration-200"
               >
-                Request Partner Access
+                Run on Arctevia
               </button>
             </div>
           </div>
@@ -177,7 +177,7 @@ export default function Home() {
             Join our early access program and be among the first to experience truly sovereign AI compute.
           </p>
           <p className="text-lg text-gray-700 italic mb-10">
-            🚀 Join developers and AI teams moving to sovereign compute — before the cloud gets locked down.
+            We're connecting with data centers, researchers, and open-source AI teams aligned with privacy-first, sustainable infrastructure.
           </p>
           <button
             onClick={() => setShowModal(true)}
@@ -199,8 +199,7 @@ export default function Home() {
             >
               <X className="w-6 h-6" />
             </button>
-            <h2 className="text-2xl font-bold text-[#1B3B6F] mb-4">Request Partner Intro Call</h2>
-            <p className="text-gray-600 mb-4">After submitting the form, we'll follow up within 1–2 business days to explore potential collaboration.</p>
+            <h2 className="text-2xl font-bold text-[#1B3B6F] mb-4">Join Arctevia Early Access</h2>
             <iframe
               src="https://tally.so/r/mVNgzg"
               width="100%"
