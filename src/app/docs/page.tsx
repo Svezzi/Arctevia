@@ -291,7 +291,7 @@ export default function DocsPage() {
             </button>
             <h2 className="text-2xl font-bold text-[#1B3B6F] mb-4">Join Arctevia Early Access</h2>
             <iframe
-              src="https://tally.so/r/mZeB4a"
+              src="https://tally.so/r/mVNgzg"
               width="100%"
               height="500"
               className="rounded-md w-full"
