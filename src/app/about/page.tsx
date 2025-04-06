@@ -165,14 +165,15 @@ export default function AboutPage() {
             Interested in learning more or getting started with Arctevia?
           </h2>
           <p className="text-lg text-gray-700 mb-8">
-            Join Our Early Access Program: Be among the first to access Arctevia's sovereign compute services 
-            and help shape the future of AI development with privacy-first, green compute infrastructure.
+            We're actively exploring partnerships with data centers, AI startups, and researchers who share our commitment to privacy-first, sustainable AI infrastructure.
+            
+            Reach out to discuss how we can collaborate and shape the future of sovereign AI compute — together.
           </p>
           <button 
             onClick={() => setShowModal(true)}
             className="bg-[#1B3B6F] text-white px-6 py-3 rounded-xl font-semibold hover:bg-[#2a5ca3] transition-colors inline-block"
           >
-            Get Early Access
+            Request Intro Call
           </button>
         </section>
 
