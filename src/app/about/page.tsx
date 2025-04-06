@@ -58,9 +58,7 @@ export default function AboutPage() {
               environmentally responsible way possible.
             </p>
             <p className="mb-4">
-              We believe that the future of AI should be built on a foundation of trust, transparency, 
-              and data protection. That's why we operate under GDPR compliance and ensure full control 
-              over data sovereignty, offering peace of mind to our clients and partners.
+              We believe the future of AI depends on trust, transparency, and data protection — values we're committed to as we grow.
             </p>
           </div>
         </section>
@@ -70,15 +68,10 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold text-[#1B3B6F] mb-6">Our Vision</h2>
           <div className="prose prose-lg max-w-none text-gray-700">
             <p className="mb-4">
-              We envision a future where Arctevia is at the forefront of AI compute infrastructure, 
-              enabling developers, researchers, and businesses to create and deploy the next generation 
-              of AI models with ease.
+              We're building Arctevia to support the next generation of AI infrastructure — helping teams deploy and scale their models on trusted, sustainable compute.
             </p>
             <p className="mb-4">
-              Our goal is to become Europe's leading provider of sovereign AI compute, helping the 
-              continent establish a self-sufficient and resilient AI ecosystem that does not rely on 
-              outside vendors or geopolitical tensions. We are building a world where AI development 
-              is not hindered by data privacy concerns, nor limited by the infrastructure available.
+              Our goal is to support Europe's growing demand for sovereign AI infrastructure — offering a privacy-first, sustainable foundation for innovation.
             </p>
             <p className="mb-4">
               Through innovation and commitment, we strive to be the go-to partner for AI companies 
