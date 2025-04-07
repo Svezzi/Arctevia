@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 export default function Navbar() {
@@ -13,7 +14,14 @@ export default function Navbar() {
   return (
     <nav className="fixed w-full z-10 bg-white shadow-md py-4 px-8">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold text-[#1B3B6F]">
+        <Link href="/" className="flex items-center text-2xl font-bold text-[#1B3B6F]">
+          <Image 
+            src="/PHOTOS/LOGO_CLEAN_BG.png" 
+            alt="Arctevia Logo" 
+            width={40} 
+            height={40} 
+            className="mr-2"
+          />
           Arctevia
         </Link>
         

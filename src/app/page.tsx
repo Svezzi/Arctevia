@@ -27,7 +27,7 @@ export default function Home() {
               onClick={() => setShowModal(true)}
               className="bg-[#A9D6E5] text-[#1B3B6F] px-6 py-3 rounded-xl font-semibold hover:bg-[#1B3B6F] hover:text-white transition duration-200 inline-block"
             >
-              Get Early Access
+              Request Intro Call
             </button>
           </div>
         </div>
@@ -49,7 +49,7 @@ export default function Home() {
                 🧠 Optimized for Open Models
               </h3>
               <p className="text-gray-600">
-                Run top open-source models like Mistral, LLaMA, and Falcon in seconds — no config headaches.
+                Run top open-source models like Mistral, LLaMA, and DeepSeek in seconds — no config headaches.
               </p>
             </div>
             
@@ -168,20 +168,20 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-b from-white to-[#A9D6E5] rounded-2xl mt-20 mx-6 md:mx-12">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold text-[#1B3B6F] mb-6">
+      <section className="py-16 bg-gradient-to-b from-white to-[#A9D6E5] rounded-2xl mt-20 mx-6 md:mx-12">
+        <div className="max-w-3xl mx-auto text-center px-4">
+          <h2 className="text-3xl font-bold text-[#1B3B6F] leading-tight max-w-2xl mx-auto">
             Let's explore partnership opportunities in sovereign AI compute.
           </h2>
-          <p className="text-xl text-gray-600 mb-4">
-            Join our early access program and be among the first to experience truly sovereign AI compute.
+          <p className="mt-4 text-base text-gray-700 max-w-2xl mx-auto">
+            Join our early access program to help shape the future of private, sustainable infrastructure for AI teams across Europe.
           </p>
-          <p className="text-lg text-gray-700 italic mb-10">
+          <p className="mt-3 text-sm text-gray-600 max-w-2xl mx-auto">
             We're connecting with data centers, researchers, and open-source AI teams aligned with privacy-first, sustainable infrastructure.
           </p>
           <button
             onClick={() => setShowModal(true)}
-            className="bg-[#1B3B6F] text-white px-6 py-3 rounded-xl font-semibold hover:bg-[#A9D6E5] hover:text-[#1B3B6F] transition duration-200 inline-block"
+            className="bg-[#1B3B6F] text-white px-6 py-3 rounded-xl font-semibold hover:bg-[#A9D6E5] hover:text-[#1B3B6F] transition duration-200 inline-block mt-8"
           >
             Request a Partner Intro Call
           </button>
