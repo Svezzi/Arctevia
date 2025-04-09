@@ -68,6 +68,9 @@ export default function SubmitJob() {
                   <option value="llama2">LLaMA 2</option>
                   <option value="mistral">Mistral</option>
                   <option value="deepseek">DeepSeek</option>
+                  <option value="codellama">Code LLaMA</option>
+                  <option value="phi2">Phi-2</option>
+                  <option value="falcon">Falcon</option>
                 </select>
               </div>
               
@@ -123,36 +126,15 @@ export default function SubmitJob() {
                   Upload Model Definition
                 </label>
                 <div 
-                  className={`w-full border-2 border-dashed ${fileName ? 'border-[#A9D6E5] bg-blue-50' : 'border-gray-300'} rounded-lg p-6 text-center cursor-pointer hover:border-[#A9D6E5] transition-colors`}
-                  onClick={() => document.getElementById('fileUpload')?.click()}
-                  onDragOver={handleDragOver}
-                  onDrop={handleDrop}
+                  className="w-full border-2 border-dashed border-gray-300 rounded-lg p-6 text-center cursor-pointer hover:border-[#A9D6E5] transition-colors"
+                  onClick={() => window.location.href = '/coming-soon'}
                 >
-                  <input 
-                    type="file" 
-                    id="fileUpload" 
-                    className="hidden"
-                    onChange={handleFileChange}
-                    accept=".py,.ipynb,.yaml,.yml"
-                  />
                   <div className="text-gray-500">
-                    {fileName ? (
-                      <>
-                        <svg xmlns="http://www.w3.org/2000/svg" className="mx-auto h-12 w-12 text-[#A9D6E5]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                        </svg>
-                        <p className="mt-1 font-medium text-[#1B3B6F]">{fileName}</p>
-                        <p className="text-xs mt-2">Click or drag to replace file</p>
-                      </>
-                    ) : (
-                      <>
-                        <svg xmlns="http://www.w3.org/2000/svg" className="mx-auto h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
-                        </svg>
-                        <p className="mt-1">Drag and drop your file here, or click to browse</p>
-                        <p className="text-xs mt-2">Supports .py, .ipynb, .yaml files</p>
-                      </>
-                    )}
+                    <svg xmlns="http://www.w3.org/2000/svg" className="mx-auto h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                    </svg>
+                    <p className="mt-1">Drag and drop your file here, or click to browse</p>
+                    <p className="text-xs mt-2">Supports .py, .ipynb, .yaml files</p>
                   </div>
                 </div>
               </div>
@@ -165,14 +147,16 @@ export default function SubmitJob() {
             </div>
             
             {/* Submit Button */}
-            <button
-              type="button"
-              disabled
-              className="bg-[#A9D6E5] text-[#1B3B6F] px-6 py-3 rounded-xl font-semibold hover:shadow-lg opacity-70 cursor-not-allowed"
-            >
-              Launch Job
-            </button>
-            <p className="text-sm text-gray-500 mt-2">Please complete your profile to launch jobs</p>
+            <div className="flex justify-center">
+              <button
+                type="button"
+                onClick={() => window.location.href = '/signup-form'}
+                className="bg-[#A9D6E5] text-[#1B3B6F] px-6 py-3 rounded-xl font-semibold hover:shadow-lg"
+              >
+                Sign up for Early Access
+              </button>
+            </div>
+            <p className="text-lg font-semibold text-center text-[#1B3B6F] mt-4">This is a demo interface. Submitting jobs will be available when we launch.</p>
           </form>
           
           {/* Recent Jobs Section */}

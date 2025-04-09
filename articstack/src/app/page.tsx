@@ -13,11 +13,12 @@ export default function Home() {
       <section className="pt-36 pb-24 bg-[#EDF3F9]">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 max-w-4xl mx-auto text-center mb-10 leading-tight">
-              Train your private LLM — in Europe, without compromise.
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 max-w-full mx-auto text-center mb-10 leading-tight">
+              Train open-source models — in Europe, without compromise.
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto text-center mb-10">
-              Fully sovereign, green, and developer-ready AI infrastructure.
+              The fastest way to run private, open-source LLMs<br />
+              — sovereign, green, and entirely in-region.
             </p>
             <div className="mb-10 flex justify-center">
               <button
@@ -36,7 +37,7 @@ export default function Home() {
       </section>
 
       {/* Features Section - with white background */}
-      <section className="pt-16 pb-24 bg-white">
+      <section className="pt-20 pb-24 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <h2 className="text-xl md:text-2xl font-semibold text-center text-gray-900 mb-16 max-w-7xl mx-auto">
             If you're building open-source AI and need compliance, control, and simplicity<br />
@@ -122,7 +123,7 @@ export default function Home() {
                 href="/models/llama-2"
                 className="bg-[#A9D6E5] text-[#1B3B6F] px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-[#1B3B6F] hover:text-white transition duration-200 inline-block"
               >
-                Run on Arctevia
+                View Details
               </Link>
             </div>
             
@@ -146,7 +147,7 @@ export default function Home() {
                 href="/models/mistral"
                 className="bg-[#A9D6E5] text-[#1B3B6F] px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-[#1B3B6F] hover:text-white transition duration-200 inline-block"
               >
-                Run on Arctevia
+                View Details
               </Link>
             </div>
             
@@ -170,7 +171,7 @@ export default function Home() {
                 href="/models/deepseek"
                 className="bg-[#A9D6E5] text-[#1B3B6F] px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-[#1B3B6F] hover:text-white transition duration-200 inline-block"
               >
-                Run on Arctevia
+                View Details
               </Link>
             </div>
           </div>

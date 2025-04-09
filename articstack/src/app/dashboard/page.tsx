@@ -8,7 +8,7 @@ export default function Dashboard() {
   const [timeframe, setTimeframe] = useState<'7d' | '30d'>('7d');
   
   return (
-    <div className="bg-[#EAF2F8] min-h-screen pt-24 pb-16">
+    <div className="bg-[#EAF2F8] min-h-screen pt-16 pb-16">
       <div className="max-w-7xl mx-auto px-6 py-12">
         <div className="flex justify-between items-center mb-8">
           <h1 className="text-3xl font-semibold text-[#1B3B6F]">Your Dashboard</h1>
@@ -60,7 +60,8 @@ export default function Dashboard() {
         </div>
         
         {/* Usage Chart */}
-        <div className="bg-white p-6 rounded-xl shadow-md mb-12">
+        <div className="bg-white p-6 rounded-xl shadow-md mb-12 relative">
+          <h1 className="absolute inset-0 flex items-center justify-center text-6xl font-bold text-red-600 opacity-30 tracking-wider">DEMO INTERFACE</h1>
           <div className="flex justify-between items-center mb-6">
             <h2 className="text-xl font-semibold text-[#1B3B6F]">GPU Usage</h2>
             <div className="flex space-x-2 bg-gray-100 rounded-lg p-1">

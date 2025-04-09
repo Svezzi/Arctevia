@@ -12,7 +12,7 @@ export default function AboutPage() {
       {/* Hero/Header Section */}
       <section className="bg-gradient-to-b from-[#1B3B6F] to-[#2a5ca3] text-white py-16">
         <div className="max-w-5xl mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Arctevia: Sovereign Compute for the Future of AI</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">Arctevia: Sovereign Compute<br /> for the Future of AI</h1>
         </div>
       </section>
 
@@ -179,15 +179,9 @@ export default function AboutPage() {
 
         {/* Image Section (Nordic landscapes, renewable energy) */}
         <section className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-          <div className="bg-gray-200 h-48 rounded-xl flex items-center justify-center text-gray-500 italic">
-            Nordic hydropower image
-          </div>
-          <div className="bg-gray-200 h-48 rounded-xl flex items-center justify-center text-gray-500 italic">
-            Wind farm image
-          </div>
-          <div className="bg-gray-200 h-48 rounded-xl flex items-center justify-center text-gray-500 italic">
-            Geothermal energy image
-          </div>
+          <img src="/PHOTOS/Hydropower image.png" alt="Nordic hydropower" className="w-full h-48 object-cover rounded-xl"/>
+          <img src="/PHOTOS/Wind farm image.png" alt="Wind farm" className="w-full h-48 object-cover rounded-xl"/>
+          <img src="/PHOTOS/Geothermal energy image.png" alt="Geothermal energy" className="w-full h-48 object-cover rounded-xl"/>
         </section>
 
       </div>
