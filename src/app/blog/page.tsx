@@ -6,7 +6,10 @@ export default function BlogPage() {
       {/* Hero/Header Section */}
       <section className="bg-gradient-to-b from-[#1B3B6F] to-[#2a5ca3] text-white py-16">
         <div className="max-w-5xl mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Arctevia Blog</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-[#1B3B6F] mb-6">Coming Soon</h1>
+          <p className="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto">
+            Our blog is under construction. Check back soon for updates, insights, and news about Arctevia&apos;s progress!
+          </p>
         </div>
       </section>
 
