@@ -1,6 +1,6 @@
 'use client';
 
-import { Shield, Leaf, Zap, Brain, X, Clock, CheckCircle } from 'lucide-react';
+import { X } from 'lucide-react';
 import { useState } from 'react';
 
 export default function Home() {
@@ -12,14 +12,14 @@ export default function Home() {
       <section className="pt-36 pb-24 bg-[#EDF3F9]">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 max-w-full mx-auto text-center mb-10 leading-tight">
-              Train open-source models — in Europe, without compromise.
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 max-w-5xl mx-auto text-center mb-6 leading-tight">
+              Train open-source models — in Europe,<br />without compromise.
             </h1>
-            <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto text-center mb-10">
+            <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto text-center mb-10">
               The fastest way to run private, open-source LLMs<br />
               — sovereign, green, and entirely in-region.
             </p>
-            <div className="mb-10 flex justify-center">
+            <div className="mb-6 flex justify-center">
               <button
                 onClick={() => setShowModal(true)}
                 className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition duration-200"
@@ -27,7 +27,7 @@ export default function Home() {
                 Apply for Early Access
               </button>
             </div>
-            <p className="text-base text-gray-500 text-center max-w-2xl mx-auto">
+            <p className="text-sm text-gray-500 text-center max-w-xl mx-auto">
               No U.S. exposure. No lock-in. Just fast, secure, sovereign AI compute.<br />
               Built for open-source models like Mistral, LLaMA, and DeepSeek.
             </p>
