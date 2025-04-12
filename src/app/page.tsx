@@ -180,7 +180,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-[#EDF3F9] py-12">
         <div className="max-w-7xl mx-auto px-6 md:px-12 text-center text-gray-500 text-sm">
-          <p>&copy; {new Date().getFullYear()} Arctevia. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Arctevia. All rights reserved. (UPDATED VERSION)</p>
           <p>Built with privacy and sustainability in mind.</p>
         </div>
       </footer>
