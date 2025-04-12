@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { X } from 'lucide-react';
 import { useState } from 'react';
 
@@ -179,9 +180,30 @@ export default function AboutPage() {
 
         {/* Image Section (Nordic landscapes, renewable energy) */}
         <section className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-          <img src="/PHOTOS/Hydropower image.png" alt="Nordic hydropower" className="w-full h-48 object-cover rounded-xl"/>
-          <img src="/PHOTOS/Wind farm image.png" alt="Wind farm" className="w-full h-48 object-cover rounded-xl"/>
-          <img src="/PHOTOS/Geothermal energy image.png" alt="Geothermal energy" className="w-full h-48 object-cover rounded-xl"/>
+          <div className="relative h-48 rounded-xl overflow-hidden">
+            <Image 
+              src="/PHOTOS/Hydropower image.png" 
+              alt="Nordic hydropower" 
+              fill 
+              style={{objectFit: 'cover'}}
+            />
+          </div>
+          <div className="relative h-48 rounded-xl overflow-hidden">
+            <Image 
+              src="/PHOTOS/Wind farm image.png" 
+              alt="Wind farm" 
+              fill 
+              style={{objectFit: 'cover'}}
+            />
+          </div>
+          <div className="relative h-48 rounded-xl overflow-hidden">
+            <Image 
+              src="/PHOTOS/Geothermal energy image.png" 
+              alt="Geothermal energy" 
+              fill 
+              style={{objectFit: 'cover'}}
+            />
+          </div>
         </section>
 
       </div>
