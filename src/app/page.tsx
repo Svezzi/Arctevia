@@ -177,25 +177,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Call to Action Section - white background */}
-      <section className="pt-16 pb-24 bg-white">
-        <div className="max-w-3xl mx-auto px-6 md:px-12 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Ready to get started?</h2>
-          <p className="text-lg text-gray-600 mb-10">
-            Apply for early access to Arctevia&apos;s sovereign compute platform and start running open-source models in Europe today.
-          </p>
-          <button
-            onClick={() => setShowModal(true)}
-            className="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition duration-200"
-          >
-            Apply for Early Access
-          </button>
-          <p className="text-sm text-gray-500 mt-6">
-            Questions? Feel free to <button onClick={() => window.location.href='/contact'} className="text-blue-600 hover:underline">contact us</button>.
-          </p>
-        </div>
-      </section>
-
       {/* Footer */}
       <footer className="bg-[#EDF3F9] py-12">
         <div className="max-w-7xl mx-auto px-6 md:px-12 text-center text-gray-500 text-sm">
