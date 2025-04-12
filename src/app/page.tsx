@@ -12,8 +12,8 @@ export default function Home() {
       <section className="pt-36 pb-24 bg-[#EDF3F9]">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 max-w-5xl mx-auto text-center mb-6 leading-tight">
-              Train open-source models — in Europe,<br />without compromise.
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 max-w-full mx-auto text-center mb-10 leading-tight">
+              Train open-source models — in Europe, without compromise.
             </h1>
             <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto text-center mb-10">
               The fastest way to run private, open-source LLMs<br />
