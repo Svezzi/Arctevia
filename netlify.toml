@@ -1,11 +1,12 @@
 [build]
   base = "."
-  command = "npm run build"
+  command = "npm cache clean --force && npm install --no-audit --no-fund --prefer-offline && npm run build"
   publish = ".next"
 
 [build.environment]
   NODE_VERSION = "20.10.0"
   NPM_FLAGS = "--legacy-peer-deps"
+  CI = "false"
 
 [[plugins]]
 package = "@netlify/plugin-nextjs" 
