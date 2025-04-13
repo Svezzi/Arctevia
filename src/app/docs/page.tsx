@@ -70,7 +70,7 @@ export default function DocsPage() {
           </p>
           <p className="text-gray-600 mb-4">
             Your data <strong>never leaves the Nordic region</strong> unless you explicitly allow it.
-            We never inspect, monitor, or analyze job contents — only what&apos;s needed to run your workload.
+            We never inspect, monitor, or analyze job contents — only what's needed to run your workload.
           </p>
           <p className="text-gray-600 mb-4">
             Data is encrypted in transit and at rest.
@@ -215,14 +215,9 @@ export default function DocsPage() {
               <h1 className="text-4xl font-bold text-[#1B3B6F] mb-6">Documentation</h1>
               
               {/* Subheading / Intro */}
-              <div className="prose prose-lg max-w-none text-gray-700">
-                <p className="mb-4">
-                  Welcome to the Arctevia documentation. Find guides, tutorials, and API references to help you get started with our sovereign compute platform.
-                </p>
-                <p className="mb-4">
-                  Our documentation is currently being developed. We&apos;ll update this section soon with detailed information on how to use Arctevia for your AI projects.
-                </p>
-              </div>
+              <p className="text-lg text-gray-600 mb-10">
+                Everything you need to get started with Arctevia — from launching your first model to understanding how we keep your data sovereign and secure.
+              </p>
               
               {/* Documentation Sections */}
               <div className="space-y-8">

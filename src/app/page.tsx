@@ -1,6 +1,7 @@
 'use client';
 
-import { X } from 'lucide-react';
+import Link from 'next/link';
+import { Server, Shield, Leaf, Zap, Brain, X, Clock, CheckCircle } from 'lucide-react';
 import { useState } from 'react';
 
 export default function Home() {
@@ -15,11 +16,11 @@ export default function Home() {
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 max-w-full mx-auto text-center mb-10 leading-tight">
               Train open-source models — in Europe, without compromise.
             </h1>
-            <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto text-center mb-10">
+            <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto text-center mb-10">
               The fastest way to run private, open-source LLMs<br />
               — sovereign, green, and entirely in-region.
             </p>
-            <div className="mb-6 flex justify-center">
+            <div className="mb-10 flex justify-center">
               <button
                 onClick={() => setShowModal(true)}
                 className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition duration-200"
@@ -27,7 +28,7 @@ export default function Home() {
                 Apply for Early Access
               </button>
             </div>
-            <p className="text-sm text-gray-500 text-center max-w-xl mx-auto">
+            <p className="text-base text-gray-500 text-center max-w-2xl mx-auto">
               No U.S. exposure. No lock-in. Just fast, secure, sovereign AI compute.<br />
               Built for open-source models like Mistral, LLaMA, and DeepSeek.
             </p>
@@ -39,7 +40,7 @@ export default function Home() {
       <section className="pt-20 pb-24 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <h2 className="text-xl md:text-2xl font-semibold text-center text-gray-900 mb-16 max-w-7xl mx-auto">
-            If you&apos;re building open-source AI and need compliance, control, and simplicity<br />
+            If you're building open-source AI and need compliance, control, and simplicity<br />
             — we built Arctevia for you.
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mb-10">
@@ -51,7 +52,7 @@ export default function Home() {
                 Jobs run only in Europe — with jurisdictional and cryptographic controls.
               </p>
             </div>
-
+            
             {/* Feature 2 */}
             <div className="bg-white shadow-md rounded-xl p-6 text-center border border-gray-100">
               <div className="text-2xl mb-3">⚙️</div>
@@ -60,7 +61,7 @@ export default function Home() {
                 Launch models with ease using familiar open tooling — no DevOps needed.
               </p>
             </div>
-
+            
             {/* Feature 3 */}
             <div className="bg-white shadow-md rounded-xl p-6 text-center border border-gray-100">
               <div className="text-2xl mb-3">📜</div>
@@ -79,7 +80,7 @@ export default function Home() {
                 Powered by 100% renewable energy from Nordic sources — low carbon footprint.
               </p>
             </div>
-
+            
             {/* Feature 5 */}
             <div className="bg-white shadow-md rounded-xl p-6 text-center border border-gray-100">
               <div className="text-2xl mb-3">🔓</div>
@@ -118,14 +119,14 @@ export default function Home() {
                   #Quantized
                 </span>
               </div>
-              <button
-                onClick={() => window.location.href='/models/llama-2'}
+              <Link 
+                href="/models/llama-2"
                 className="bg-[#A9D6E5] text-[#1B3B6F] px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-[#1B3B6F] hover:text-white transition duration-200 inline-block"
               >
                 View Details
-              </button>
+              </Link>
             </div>
-
+            
             {/* Model Card 2 */}
             <div className="bg-white p-6 rounded-2xl shadow-md">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
@@ -142,14 +143,14 @@ export default function Home() {
                   #Instruction-Tuned
                 </span>
               </div>
-              <button
-                onClick={() => window.location.href='/models/mistral'}
+              <Link 
+                href="/models/mistral"
                 className="bg-[#A9D6E5] text-[#1B3B6F] px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-[#1B3B6F] hover:text-white transition duration-200 inline-block"
               >
                 View Details
-              </button>
+              </Link>
             </div>
-
+            
             {/* Model Card 3 */}
             <div className="bg-white p-6 rounded-2xl shadow-md">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
@@ -166,30 +167,22 @@ export default function Home() {
                   #Coder
                 </span>
               </div>
-              <button
-                onClick={() => window.location.href='/models/deepseek'}
+              <Link 
+                href="/models/deepseek"
                 className="bg-[#A9D6E5] text-[#1B3B6F] px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-[#1B3B6F] hover:text-white transition duration-200 inline-block"
               >
                 View Details
-              </button>
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-[#EDF3F9] py-12">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 text-center text-gray-500 text-sm">
-          <p>&copy; {new Date().getFullYear()} Arctevia. All rights reserved. (UPDATED VERSION)</p>
-          <p>Built with privacy and sustainability in mind.</p>
-        </div>
-      </footer>
-
       {/* Early Access Modal */}
       {showModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-50">
           <div className="bg-white rounded-xl shadow-lg p-6 max-w-2xl w-full relative">
-            <button
+            <button 
               onClick={() => setShowModal(false)}
               className="absolute top-3 right-3 text-gray-500 hover:text-gray-800"
               aria-label="Close modal"

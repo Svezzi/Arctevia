@@ -58,9 +58,9 @@ export default function ModelsPage() {
         
         {/* Intro Section */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-[#1B3B6F] mb-6">Available Models</h1>
-          <p className="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto">
-            Explore the open-source models you can run on Arctevia&apos;s sovereign infrastructure.
+          <h1 className="text-3xl font-semibold text-[#1B3B6F] mb-4">Supported AI Models</h1>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            Run open-source models on secure, Nordic GPU infrastructure — with full control over configuration and runtime.
           </p>
         </div>
         
@@ -70,7 +70,7 @@ export default function ModelsPage() {
           <div className="bg-white rounded-xl p-6 shadow-md">
             <h2 className="text-xl font-semibold text-[#1B3B6F] mb-2">LLaMA 2</h2>
             <p className="text-gray-600 mb-4">
-              Meta&apos;s powerful open-source LLM, fine-tuned for chat and instruction-following with improved safety.
+              Meta's powerful open-source LLM, fine-tuned for chat and instruction-following with improved safety.
             </p>
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">
@@ -117,108 +117,100 @@ export default function ModelsPage() {
           </div>
           
           {/* DeepSeek */}
-          <div className="bg-white p-6 rounded-2xl shadow-md">
-            <h3 className="text-xl font-semibold text-gray-900 mb-3">
-              DeepSeek Coder
-            </h3>
-            <p className="text-sm text-gray-600 mb-4">
-              Specialized for code generation and understanding.
+          <div className="bg-white rounded-xl p-6 shadow-md">
+            <h2 className="text-xl font-semibold text-[#1B3B6F] mb-2">DeepSeek</h2>
+            <p className="text-gray-600 mb-4">
+              Trained on diverse datasets with strong performance on knowledge-intensive tasks and multilingual support.
             </p>
-            <div className="flex flex-wrap gap-1.5 mb-4">
-              <span className="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded-full">
+            <div className="flex flex-wrap gap-2 mb-6">
+              <span className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">
                 #Open-Source
               </span>
-              <span className="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded-full">
+              <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">
                 #7B-67B
               </span>
-              <span className="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded-full">
-                #Code
+              <span className="bg-rose-100 text-rose-800 text-xs px-2 py-1 rounded-full">
+                #Multilingual
               </span>
             </div>
-            <Link 
+            <Link
               href="/models/deepseek"
-              className="bg-[#A9D6E5] text-[#1B3B6F] px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-[#1B3B6F] hover:text-white transition duration-200 inline-block"
+              className="bg-[#A9D6E5] text-[#1B3B6F] px-4 py-2 rounded-lg text-sm font-semibold hover:bg-[#1B3B6F] hover:text-white transition duration-200 inline-block"
             >
               View Details
             </Link>
           </div>
           
           {/* Falcon */}
-          <div className="bg-white p-6 rounded-2xl shadow-md">
-            <h3 className="text-xl font-semibold text-gray-900 mb-3">
-              Falcon
-            </h3>
-            <p className="text-sm text-gray-600 mb-4">
-              Efficient model excelling at complex instruction following.
+          <div className="bg-white rounded-xl p-6 shadow-md">
+            <h2 className="text-xl font-semibold text-[#1B3B6F] mb-2">Falcon</h2>
+            <p className="text-gray-600 mb-4">
+              Built by the Technology Innovation Institute, this model excels at following complex prompts and instructions.
             </p>
-            <div className="flex flex-wrap gap-1.5 mb-4">
-              <span className="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded-full">
+            <div className="flex flex-wrap gap-2 mb-6">
+              <span className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">
                 #Open-Source
               </span>
-              <span className="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded-full">
-                #7B-180B
+              <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">
+                #7B-40B
               </span>
-              <span className="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded-full">
+              <span className="bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-full">
                 #Apache-2.0
               </span>
             </div>
-            <Link 
+            <Link
               href="/models/falcon"
-              className="bg-[#A9D6E5] text-[#1B3B6F] px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-[#1B3B6F] hover:text-white transition duration-200 inline-block"
+              className="bg-[#A9D6E5] text-[#1B3B6F] px-4 py-2 rounded-lg text-sm font-semibold hover:bg-[#1B3B6F] hover:text-white transition duration-200 inline-block"
             >
               View Details
             </Link>
           </div>
           
           {/* Code LLaMA */}
-          <div className="bg-white p-6 rounded-2xl shadow-md">
-            <h3 className="text-xl font-semibold text-gray-900 mb-3">
-              Code LLaMA
-            </h3>
-            <p className="text-sm text-gray-600 mb-4">
-              LLaMA fine-tuned specifically for code tasks.
+          <div className="bg-white rounded-xl p-6 shadow-md">
+            <h2 className="text-xl font-semibold text-[#1B3B6F] mb-2">Code LLaMA</h2>
+            <p className="text-gray-600 mb-4">
+              Specialized on code understanding and generation. Supports multiple programming languages with high-quality outputs.
             </p>
-            <div className="flex flex-wrap gap-1.5 mb-4">
-              <span className="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded-full">
+            <div className="flex flex-wrap gap-2 mb-6">
+              <span className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">
                 #Open-Source
               </span>
-              <span className="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded-full">
+              <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">
                 #7B-34B
               </span>
-              <span className="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded-full">
+              <span className="bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded-full">
                 #Code
               </span>
             </div>
-            <Link 
+            <Link
               href="/models/code-llama"
-              className="bg-[#A9D6E5] text-[#1B3B6F] px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-[#1B3B6F] hover:text-white transition duration-200 inline-block"
+              className="bg-[#A9D6E5] text-[#1B3B6F] px-4 py-2 rounded-lg text-sm font-semibold hover:bg-[#1B3B6F] hover:text-white transition duration-200 inline-block"
             >
               View Details
             </Link>
           </div>
           
           {/* Phi-2 */}
-          <div className="bg-white p-6 rounded-2xl shadow-md">
-            <h3 className="text-xl font-semibold text-gray-900 mb-3">
-              Phi-2
-            </h3>
-            <p className="text-sm text-gray-600 mb-4">
-              Microsoft&apos;s small but powerful model with strong reasoning.
+          <div className="bg-white rounded-xl p-6 shadow-md">
+            <h2 className="text-xl font-semibold text-[#1B3B6F] mb-2">Phi-2</h2>
+            <p className="text-gray-600 mb-4">
+              Microsoft's small yet powerful LLM with excellent performance-to-size ratio. Handles complex reasoning tasks despite small size.
             </p>
-            <div className="flex flex-wrap gap-1.5 mb-4">
-              <span className="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded-full">
+            <div className="flex flex-wrap gap-2 mb-6">
+              <span className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">
                 #Open-Source
               </span>
-              <span className="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded-full">
+              <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">
                 #2.7B
               </span>
-              <span className="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded-full">
+              <span className="bg-teal-100 text-teal-800 text-xs px-2 py-1 rounded-full">
                 #Efficient
               </span>
             </div>
-            <Link 
+            <Link
               href="/models/phi-2"
-              className="bg-[#A9D6E5] text-[#1B3B6F] px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-[#1B3B6F] hover:text-white transition duration-200 inline-block"
+              className="bg-[#A9D6E5] text-[#1B3B6F] px-4 py-2 rounded-lg text-sm font-semibold hover:bg-[#1B3B6F] hover:text-white transition duration-200 inline-block"
             >
               View Details
             </Link>

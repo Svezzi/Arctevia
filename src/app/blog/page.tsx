@@ -6,10 +6,7 @@ export default function BlogPage() {
       {/* Hero/Header Section */}
       <section className="bg-gradient-to-b from-[#1B3B6F] to-[#2a5ca3] text-white py-16">
         <div className="max-w-5xl mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-[#1B3B6F] mb-6">Coming Soon</h1>
-          <p className="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto">
-            Our blog is under construction. Check back soon for updates, insights, and news about Arctevia&apos;s progress!
-          </p>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">Arctevia Blog</h1>
         </div>
       </section>
 
@@ -21,7 +18,7 @@ export default function BlogPage() {
               Our blog is coming soon with articles about sovereign compute, open-source AI, and sustainable infrastructure.
             </p>
             <p className="mt-4">
-              Check back soon for insights, tutorials, and updates on Arctevia&apos;s development.
+              Check back soon for insights, tutorials, and updates on Arctevia's development.
             </p>
             <p className="mt-8 text-sm">
               Want to contribute a guest post? Contact us at <a href="mailto:info@arctevia.com" className="text-blue-600 underline">info@arctevia.com</a>.
