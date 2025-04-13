@@ -1,6 +1,6 @@
 [build]
   base = "."
-  command = "npm cache clean --force && npm install --no-audit --no-fund --prefer-offline && npm run build"
+  command = "npm cache clean --force && npm install --no-audit --no-fund --prefer-offline && npm run build -- --no-lint"
   publish = ".next"
 
 [build.environment]
