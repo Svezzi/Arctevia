@@ -12,7 +12,7 @@ export default function AboutPage() {
       {/* Hero/Header Section */}
       <section className="bg-gradient-to-b from-[#1B3B6F] to-[#2a5ca3] text-white py-16">
         <div className="max-w-5xl mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Europe's Green & Sovereign AI Backbone</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">Europe's Green & Sovereign<br />AI Backbone</h1>
         </div>
       </section>
 
