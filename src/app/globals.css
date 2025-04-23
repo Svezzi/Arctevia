@@ -13,6 +13,23 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.hero-background {
+  background-image: url('/PHOTOS/HeroBackground.png');
+  background-size: cover;
+  background-position: center 25%;
+  position: relative;
+}
+
+.hero-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;

@@ -70,7 +70,7 @@ export default function DocsPage() {
           </p>
           <p className="text-gray-600 mb-4">
             Your data <strong>never leaves the Nordic region</strong> unless you explicitly allow it.
-            We never inspect, monitor, or analyze job contents — only what's needed to run your workload.
+            We never inspect, monitor, or analyze job contents — only what&apos;s needed to run your workload.
           </p>
           <p className="text-gray-600 mb-4">
             Data is encrypted in transit and at rest.

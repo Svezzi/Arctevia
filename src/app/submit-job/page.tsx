@@ -11,28 +11,6 @@ const formStyleFix = `
 `;
 
 export default function SubmitJob() {
-  const [fileName, setFileName] = useState<string | null>(null);
-
-  const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const file = event.target.files?.[0];
-    if (file) {
-      setFileName(file.name);
-    }
-  };
-
-  const handleDragOver = (event: React.DragEvent<HTMLDivElement>) => {
-    event.preventDefault();
-  };
-
-  const handleDrop = (event: React.DragEvent<HTMLDivElement>) => {
-    event.preventDefault();
-    const file = event.dataTransfer.files?.[0];
-    if (file) {
-      setFileName(file.name);
-      // In a real app, you would handle the file upload here
-    }
-  };
-
   return (
     <>
       <style jsx global>{formStyleFix}</style>

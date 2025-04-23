@@ -18,7 +18,7 @@ export default function BlogPage() {
               Our blog is coming soon with articles about sovereign compute, open-source AI, and sustainable infrastructure.
             </p>
             <p className="mt-4">
-              Check back soon for insights, tutorials, and updates on Arctevia's development.
+              Check back soon for insights, tutorials, and updates on Arctevia&apos;s development.
             </p>
             <p className="mt-8 text-sm">
               Want to contribute a guest post? Contact us at <a href="mailto:info@arctevia.com" className="text-blue-600 underline">info@arctevia.com</a>.

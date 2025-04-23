@@ -1,8 +1,9 @@
 'use client';
 
 import Link from 'next/link';
-import { Server, Shield, Leaf, Zap, Brain, X, Clock, CheckCircle } from 'lucide-react';
+import { X } from 'lucide-react';
 import { useState } from 'react';
+import HeroBackground from '@/components/HeroBackground';
 
 export default function Home() {
   const [showModal, setShowModal] = useState(false);
@@ -10,15 +11,15 @@ export default function Home() {
   return (
     <div className="bg-white">
       {/* Hero Section - with increased top padding for breathing room */}
-      <section className="pt-36 pb-24 bg-[#EDF3F9]">
-        <div className="max-w-7xl mx-auto px-6 md:px-12">
+      <section className="pt-36 pb-24 hero-background">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 max-w-full mx-auto text-center mb-10 leading-tight">
-              Train open-source models — in Europe, without compromise.
+            <h1 className="text-4xl md:text-5xl font-bold text-white max-w-full mx-auto text-center mb-10 leading-tight">
+              Run open-source models in Europe,<br />
+              powered by Nordic renewables.
             </h1>
-            <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto text-center mb-10">
-              The fastest way to run private, open-source LLMs<br />
-              — sovereign, green, and entirely in-region.
+            <p className="text-xl md:text-2xl text-white max-w-3xl mx-auto text-center mb-10">
+              Fast private LLMs. 100% EU jurisdiction. 100% green power.
             </p>
             <div className="mb-10 flex justify-center">
               <button
@@ -28,7 +29,7 @@ export default function Home() {
                 Apply for Early Access
               </button>
             </div>
-            <p className="text-base text-gray-500 text-center max-w-2xl mx-auto">
+            <p className="text-base text-gray-200 text-center max-w-2xl mx-auto">
               No U.S. exposure. No lock-in. Just fast, secure, sovereign AI compute.<br />
               Built for open-source models like Mistral, LLaMA, and DeepSeek.
             </p>
@@ -40,7 +41,7 @@ export default function Home() {
       <section className="pt-20 pb-24 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <h2 className="text-xl md:text-2xl font-semibold text-center text-gray-900 mb-16 max-w-7xl mx-auto">
-            If you're building open-source AI and need compliance, control, and simplicity<br />
+            If you&apos;re building open-source AI and need compliance, control, and simplicity<br />
             — we built Arctevia for you.
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mb-10">
@@ -49,7 +50,7 @@ export default function Home() {
               <div className="text-2xl mb-3">🛡️</div>
               <h3 className="text-lg font-semibold text-gray-900">Enforced Sovereignty</h3>
               <p className="mt-2 text-gray-700 text-sm">
-                Jobs run only in Europe — with jurisdictional and cryptographic controls.
+                Jobs run only in Europe — keeping EU data under EU law.
               </p>
             </div>
             

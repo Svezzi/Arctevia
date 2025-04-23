@@ -60,7 +60,7 @@ export default function ModelsPage() {
         <div className="text-center mb-12">
           <h1 className="text-3xl font-semibold text-[#1B3B6F] mb-4">Supported AI Models</h1>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Run open-source models on secure, Nordic GPU infrastructure — with full control over configuration and runtime.
+            Sovereign, green compute for Europe's open-source AI.
           </p>
         </div>
         
@@ -70,7 +70,7 @@ export default function ModelsPage() {
           <div className="bg-white rounded-xl p-6 shadow-md">
             <h2 className="text-xl font-semibold text-[#1B3B6F] mb-2">LLaMA 2</h2>
             <p className="text-gray-600 mb-4">
-              Meta's powerful open-source LLM, fine-tuned for chat and instruction-following with improved safety.
+              Meta&apos;s powerful open-source LLM, fine-tuned for chat and instruction-following with improved safety.
             </p>
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">
@@ -195,7 +195,7 @@ export default function ModelsPage() {
           <div className="bg-white rounded-xl p-6 shadow-md">
             <h2 className="text-xl font-semibold text-[#1B3B6F] mb-2">Phi-2</h2>
             <p className="text-gray-600 mb-4">
-              Microsoft's small yet powerful LLM with excellent performance-to-size ratio. Handles complex reasoning tasks despite small size.
+              Microsoft&apos;s small yet powerful LLM with excellent performance-to-size ratio. Handles complex reasoning tasks despite small size.
             </p>
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">
